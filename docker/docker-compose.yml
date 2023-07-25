@@ -3,6 +3,7 @@ version: '3.1'
 services:
     flowise:
         image: flowiseai/flowise
+        container_name: flowise
         restart: always
         environment:
             - PORT=${PORT}
