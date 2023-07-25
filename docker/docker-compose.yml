@@ -19,3 +19,5 @@ services:
         volumes:
             - ~/.flowise:/root/.flowise
         command: /bin/sh -c "sleep 3; flowise start"
+        networks:
+            - captain-overlay-network
