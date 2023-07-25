@@ -8,9 +8,9 @@ RUN apk add --no-cache python3 py3-pip make g++
 RUN apk add --no-cache build-base cairo-dev pango-dev
 
 # Install Chromium
-RUN apk add --no-cache chromium
+RUN apk add chromium
 
-ENV PUPPETEER_SKIP_DOWNLOAD=false
+ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 # You can install a specific version like: flowise@1.0.0
